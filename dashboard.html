@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard de Rendimientos — Portfolio de Carlos Muñoz Alonso</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Dashboard de Rendimientos</h1>
+    <p>Power BI · Análisis de KPIs financieros y de rendimiento</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Descripción del Proyecto</h2>
+      <p>
+        Es un <strong>dashboard completamente interactivo</strong> que muestra todos los KPIs de rendimiento 
+        oficiales de la compañía. Incluye indicadores financieros clave desde la 
+        <strong>venta bruta hasta el EBIT</strong>, además de métricas operativas como 
+        los <strong>metros cuadrados de venta</strong> por sucursal.
+      </p>
+      <p>
+        El dashboard permite analizar la información a nivel de <strong>división, departamento y área de venta</strong>, 
+        integrando datos acumulados de los últimos tres ejercicios completos.
+      </p>
+    </section>
+
+    <section>
+      <h2>Construcción y Metodología</h2>
+      <p>
+        La base del modelo se construyó combinando los <strong>cierres de mes de los últimos tres ejercicios</strong>, 
+        exportados desde <strong>MicroStrategy</strong> y consolidados en Excel. Posteriormente, 
+        los datos fueron <strong>importados y combinados en Power BI</strong>, aplicando un proceso de 
+        <strong>transformación en Power Query</strong> para unificar estructuras y depurar la información.
+      </p>
+      <p>
+        Tras el modelado de datos, se desarrollaron las <strong>medidas DAX</strong> necesarias para 
+        el cálculo de KPIs, medias ponderadas y comparativas 
+        (<em>resultado vs ejercicio anterior</em> y <em>resultado vs presupuesto</em>).
+      </p>
+      <p>
+        Este enfoque permitió disponer de una herramienta ágil y automatizada 
+        para el análisis financiero y operativo, optimizando los tiempos de reporting 
+        y garantizando la fiabilidad de la información.
+      </p>
+    </section>
+
+    <p><a href="index.html">← Volver al portfolio</a></p>
+  </main>
+</body>
+</html>
