@@ -9,41 +9,77 @@
 <body>
   <header>
     <h1>Dashboard de Rendimientos</h1>
-    <p>Power BI · Análisis de KPIs financieros y de rendimiento</p>
+    <p>Power BI · Análisis integral de KPIs financieros y operativos</p>
   </header>
 
   <main>
     <section>
       <h2>Descripción del Proyecto</h2>
       <p>
-        Es un <strong>dashboard completamente interactivo</strong> que muestra todos los KPIs de rendimiento 
-        oficiales de la compañía. Incluye indicadores financieros clave desde la 
-        <strong>venta bruta hasta el EBIT</strong>, además de métricas operativas como 
-        los <strong>metros cuadrados de venta</strong> por sucursal.
+        El <strong>Dashboard de Rendimientos</strong> es una herramienta interactiva desarrollada en 
+        <strong>Power BI</strong> para el análisis integral de los <strong>indicadores financieros y operativos</strong> 
+        de la compañía. Reúne información crítica sobre la evolución de las ventas, los márgenes, 
+        la rentabilidad por metro cuadrado y la eficiencia de las distintas áreas de negocio.
       </p>
       <p>
-        El dashboard permite analizar la información a nivel de <strong>división, departamento y área de venta</strong>, 
-        integrando datos acumulados de los últimos tres ejercicios completos.
+        Su estructura permite navegar entre diferentes niveles de detalle —desde visión global de compañía 
+        hasta análisis por <strong>división, departamento o área de venta</strong>— ofreciendo una trazabilidad completa 
+        de la información y facilitando la toma de decisiones estratégicas.
+      </p>
+    </section>
+
+    <section>
+      <h2>Objetivo del Proyecto</h2>
+      <p>
+        El propósito principal fue consolidar todos los <strong>KPIs oficiales de rendimiento</strong> 
+        en una única plataforma visual, reduciendo drásticamente los tiempos de elaboración de informes 
+        y eliminando la dependencia de múltiples ficheros Excel dispersos entre departamentos.
+      </p>
+      <p>
+        Además, el modelo debía permitir un <strong>seguimiento mensual y acumulado de tres ejercicios completos</strong>, 
+        abarcando tanto variables financieras (ventas, márgenes, EBIT) como operativas (gastos, superficie de venta, productividad, etc.).
       </p>
     </section>
 
     <section>
       <h2>Construcción y Metodología</h2>
       <p>
-        La base del modelo se construyó combinando los <strong>cierres de mes de los últimos tres ejercicios</strong>, 
-        exportados desde <strong>MicroStrategy</strong> y consolidados en Excel. Posteriormente, 
-        los datos fueron <strong>importados y combinados en Power BI</strong>, aplicando un proceso de 
-        <strong>transformación en Power Query</strong> para unificar estructuras y depurar la información.
+        El desarrollo comenzó con la recopilación y consolidación de datos provenientes de 
+        <strong>MicroStrategy</strong>, <strong>SAP</strong> y distintos ficheros Excel con los cierres mensuales 
+        de los últimos tres ejercicios. Estos ficheros superaban el millón y medio de filas, 
+        por lo que su manejo en Excel resultaba inviable desde el punto de vista de rendimiento y escalabilidad.
       </p>
       <p>
-        Tras el modelado de datos, se desarrollaron las <strong>medidas DAX</strong> necesarias para 
-        el cálculo de KPIs, medias ponderadas y comparativas 
-        (<em>resultado vs ejercicio anterior</em> y <em>resultado vs presupuesto</em>).
+        Para superar esta limitación, se optó por <strong>Power BI</strong> como entorno de análisis y modelado de datos. 
+        A través de <strong>Power Query</strong> se llevó a cabo un proceso exhaustivo de transformación, 
+        limpieza y combinación de las diferentes fuentes, normalizando estructuras y creando relaciones clave 
+        entre las tablas maestras de áreas, divisiones, departamentos y KPIs.
       </p>
       <p>
-        Este enfoque permitió disponer de una herramienta ágil y automatizada 
-        para el análisis financiero y operativo, optimizando los tiempos de reporting 
-        y garantizando la fiabilidad de la información.
+        Posteriormente, en la capa de modelado, se desarrollaron numerosas <strong>medidas DAX</strong> 
+        destinadas a calcular métricas financieras y de rendimiento por metro cuadrado (€/m²), 
+        así como ratios de eficiencia, crecimiento interanual y desviaciones frente al presupuesto.
+      </p>
+      <p>
+        Estas medidas permiten realizar comparativas dinámicas entre ejercicios, meses o áreas, 
+        y obtener un análisis evolutivo continuo que antes requería horas de trabajo manual. 
+        Además, se aplicaron <strong>formatos condicionales y segmentaciones interactivas</strong> 
+        para mejorar la experiencia visual y la interpretación de los datos.
+      </p>
+    </section>
+
+    <section>
+      <h2>Resultados y Valor Añadido</h2>
+      <p>
+        El resultado final es una solución <strong>ágil, escalable y 100% automatizada</strong> 
+        que centraliza toda la información financiera y de rendimiento operativo en una única herramienta.
+        Permite disponer de <strong>reportes actualizados en tiempo real</strong> y elimina la necesidad 
+        de consolidar manualmente grandes volúmenes de datos en hojas de cálculo.
+      </p>
+      <p>
+        Este dashboard se ha convertido en una herramienta esencial para el control de gestión, 
+        aportando visibilidad inmediata sobre desviaciones presupuestarias y favoreciendo 
+        decisiones más informadas en cada nivel de la organización.
       </p>
     </section>
 
