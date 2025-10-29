@@ -1,6 +1,4 @@
-/* =========================================================
-   ESTILOS GENERALES
-========================================================= */
+/* ===== ESTILOS GENERALES ===== */
 body {
   font-family: 'Segoe UI', Roboto, Arial, sans-serif;
   margin: 40px auto;
@@ -11,27 +9,22 @@ body {
   font-size: 15px;
 }
 
-/* =========================================================
-   ENCABEZADO
-========================================================= */
+/* ===== ENCABEZADO ===== */
 header {
   text-align: center;
   margin-bottom: 50px;
-  padding: 25px;
-  background-color: #e8eef5;
+  padding: 40px 20px;
+  background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 header h1 {
-  font-size: 30px;
+  font-size: 34px;
   color: #1f3b5d;
   margin-bottom: 10px;
-  border: 2px solid #1f3b5d;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 10px;
-  background-color: #f0f4f8;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 header p {
@@ -50,9 +43,7 @@ header p {
   text-decoration: underline;
 }
 
-/* =========================================================
-   SECCIONES
-========================================================= */
+/* ===== SECCIONES ===== */
 section {
   margin-bottom: 40px;
 }
@@ -65,24 +56,18 @@ section h2 {
   margin-bottom: 15px;
 }
 
-section p,
-li {
+section p, li {
   font-size: 15px;
   color: #333;
 }
 
-/* =========================================================
-   LISTAS
-========================================================= */
-ul,
-ol {
+/* ===== LISTAS ===== */
+ul, ol {
   padding-left: 20px;
   margin-bottom: 15px;
 }
 
-/* =========================================================
-   BOTONES
-========================================================= */
+/* ===== BOTONES ===== */
 .btn {
   display: inline-block;
   padding: 10px 16px;
@@ -98,9 +83,7 @@ ol {
   background-color: #355c88;
 }
 
-/* =========================================================
-   ENLACES
-========================================================= */
+/* ===== ENLACES ===== */
 a {
   color: #1f3b5d;
   text-decoration: none;
@@ -110,9 +93,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* =========================================================
-   IMÁGENES
-========================================================= */
+/* ===== IMÁGENES ===== */
 img {
   max-width: 100%;
   display: block;
@@ -121,9 +102,7 @@ img {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* =========================================================
-   PROYECTOS (GRID PRINCIPAL EN EL PORTFOLIO)
-========================================================= */
+/* ===== PROYECTOS ===== */
 .proyectos-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -172,124 +151,19 @@ img {
   margin-bottom: 8px;
 }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
   body {
     margin: 20px;
     font-size: 14px;
   }
-
   header h1 {
-    font-size: 24px;
-    padding: 8px 16px;
+    font-size: 26px;
   }
-
-  section h2,
-  .proyecto h3 {
+  section h2, .proyecto h3 {
     font-size: 18px;
   }
-
   .proyecto h4 {
     font-size: 16px;
   }
-}
-
-/* =========================================================
-   ESTILOS ESPECÍFICOS PARA PÁGINAS DE PROYECTOS
-========================================================= */
-
-/* Contenedor principal del contenido del proyecto */
-.project-main {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-}
-
-/* Header general de los proyectos */
-.project-header {
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 30px 20px;
-  border-radius: 12px;
-  color: #fff;
-}
-
-/* Subtítulo */
-.project-subtitle {
-  font-size: 16px;
-  opacity: 0.9;
-}
-
-/* Enlace para volver al portfolio */
-.back-link {
-  display: inline-block;
-  margin-top: 40px;
-  font-weight: 500;
-  color: #1f3b5d;
-  border: 2px solid #1f3b5d;
-  padding: 10px 16px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.back-link:hover {
-  background-color: #1f3b5d;
-  color: white;
-  text-decoration: none;
-}
-
-/* Galería o vista previa del proyecto */
-.project-gallery {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.project-gallery h2 {
-  border: none;
-  color: #1f3b5d;
-  margin-bottom: 15px;
-}
-
-.project-image {
-  max-width: 90%;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* =========================================================
-   VARIANTES POR PROYECTO
-========================================================= */
-
-/* === Power BI — Dashboard === */
-.page-dashboard .project-header {
-  background: linear-gradient(135deg, #2b4d79, #4c7cc3);
-}
-
-.page-dashboard .back-link {
-  border-color: #2b4d79;
-  color: #2b4d79;
-}
-
-.page-dashboard .back-link:hover {
-  background-color: #2b4d79;
-  color: #fff;
-}
-
-/* === Python / SQL / SAS — Inventario === */
-.page-inventario .project-header {
-  background: linear-gradient(135deg, #236e3c, #43a065);
-}
-
-.page-inventario .back-link {
-  border-color: #236e3c;
-  color: #236e3c;
-}
-
-.page-inventario .back-link:hover {
-  background-color: #236e3c;
-  color: #fff;
 }
