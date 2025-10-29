@@ -6,13 +6,13 @@
   <title>Dashboard de Rendimientos — Portfolio de Carlos Muñoz Alonso</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header>
+<body class="page-dashboard">
+  <header class="project-header">
     <h1>Dashboard de Rendimientos</h1>
-    <p>Power BI · Análisis integral de KPIs financieros y operativos</p>
+    <p class="project-subtitle">Power BI · Análisis integral de KPIs financieros y operativos</p>
   </header>
 
-  <main>
+  <main class="project-main">
     <section>
       <h2>Descripción del Proyecto</h2>
       <p>
@@ -21,69 +21,40 @@
         de la compañía. Reúne información crítica sobre la evolución de las ventas, los márgenes, 
         la rentabilidad por metro cuadrado y la eficiencia de las distintas áreas de negocio.
       </p>
-      <p>
-        Su estructura permite navegar entre diferentes niveles de detalle —desde visión global de compañía 
-        hasta análisis por <strong>división, departamento o área de venta</strong>— ofreciendo una trazabilidad completa 
-        de la información y facilitando la toma de decisiones estratégicas.
-      </p>
     </section>
 
     <section>
       <h2>Objetivo del Proyecto</h2>
       <p>
-        El propósito principal fue consolidar todos los <strong>KPIs oficiales de rendimiento</strong> 
-        en una única plataforma visual, reduciendo drásticamente los tiempos de elaboración de informes 
-        y eliminando la dependencia de múltiples ficheros Excel dispersos entre departamentos.
-      </p>
-      <p>
-        Además, el modelo debía permitir un <strong>seguimiento mensual y acumulado de tres ejercicios completos</strong>, 
-        abarcando tanto variables financieras (ventas, márgenes, EBIT) como operativas (gastos, superficie de venta, productividad, etc.).
+        Consolidar todos los <strong>KPIs oficiales de rendimiento</strong> en una plataforma visual única,
+        reduciendo los tiempos de informe y eliminando dependencias de Excel.
       </p>
     </section>
 
     <section>
-      <h2>Construcción y Metodología</h2>
+      <h2>Metodología</h2>
       <p>
-        El desarrollo comenzó con la recopilación y consolidación de datos provenientes de 
-        <strong>MicroStrategy</strong>, <strong>SAP</strong> y distintos ficheros Excel con los cierres mensuales 
-        de los últimos tres ejercicios. Estos ficheros superaban el millón y medio de filas, 
-        por lo que su manejo en Excel resultaba inviable desde el punto de vista de rendimiento y escalabilidad.
-      </p>
-      <p>
-        Para superar esta limitación, se optó por <strong>Power BI</strong> como entorno de análisis y modelado de datos. 
-        A través de <strong>Power Query</strong> se llevó a cabo un proceso exhaustivo de transformación, 
-        limpieza y combinación de las diferentes fuentes, normalizando estructuras y creando relaciones clave 
-        entre las tablas maestras de áreas, divisiones, departamentos y KPIs.
-      </p>
-      <p>
-        Posteriormente, en la capa de modelado, se desarrollaron numerosas <strong>medidas DAX</strong> 
-        destinadas a calcular métricas financieras y de rendimiento por metro cuadrado (€/m²), 
-        así como ratios de eficiencia, crecimiento interanual y desviaciones frente al presupuesto.
-      </p>
-      <p>
-        Estas medidas permiten realizar comparativas dinámicas entre ejercicios, meses o áreas, 
-        y obtener un análisis evolutivo continuo que antes requería horas de trabajo manual. 
-        Además, se aplicaron <strong>formatos condicionales y segmentaciones interactivas</strong> 
-        para mejorar la experiencia visual y la interpretación de los datos.
+        Se integraron datos desde <strong>MicroStrategy</strong>, <strong>SAP</strong> y ficheros Excel, 
+        tratados mediante <strong>Power Query</strong> para su normalización.  
+        Las medidas DAX calculan métricas clave como <em>EBIT</em>, <em>€/m²</em> y desviaciones frente a presupuesto.
       </p>
     </section>
 
     <section>
       <h2>Resultados y Valor Añadido</h2>
-      <p>
-        El resultado final es una solución <strong>ágil, escalable y 100% automatizada</strong> 
-        que centraliza toda la información financiera y de rendimiento operativo en una única herramienta.
-        Permite disponer de <strong>reportes actualizados en tiempo real</strong> y elimina la necesidad 
-        de consolidar manualmente grandes volúmenes de datos en hojas de cálculo.
-      </p>
-      <p>
-        Este dashboard se ha convertido en una herramienta esencial para el control de gestión, 
-        aportando visibilidad inmediata sobre desviaciones presupuestarias y favoreciendo 
-        decisiones más informadas en cada nivel de la organización.
-      </p>
+      <ul>
+        <li>Reportes automatizados y actualizados en tiempo real.</li>
+        <li>Reducción de horas de consolidación manual.</li>
+        <li>Mayor visibilidad y trazabilidad de los KPIs financieros y operativos.</li>
+      </ul>
     </section>
 
-    <p><a href="index.html">← Volver al portfolio</a></p>
+    <section class="project-gallery">
+      <h2>Vista del Dashboard</h2>
+      <img src="img/dashboard-preview.png" alt="Vista previa del Dashboard Power BI" class="project-image">
+    </section>
+
+    <a href="index.html" class="back-link">← Volver al portfolio</a>
   </main>
 </body>
 </html>
